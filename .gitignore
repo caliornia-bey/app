@@ -1,3 +1,4 @@
 dizin.txt
 dizin/*
 !dizin/abc.txt
+.gitignore
