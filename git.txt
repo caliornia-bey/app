@@ -1,0 +1,45 @@
+config=yapılandırma demek kullanıcıya ait bilgiler tanımlanır.
+clear=konuşmayı temizler 
+pwd=hangi dosya yoluna olduğunu gösterir 
+cd ..=dosya yolundaki bir üst konuma gider 
+cd=yazılan klasörün içine girer
+mkdir=make direction danın kısaltımıdır klasör oluşturur
+touch =dosya açar 
+ls=bulunduğun klasörün içindeki elemanları yazar
+ls-a=bulunduğun klasörün içindeki bütün elemanları yazar
+init=programı başlatır
+status=staging area daki elemanları gösterir
+add= yazılan elemanı staging area ya atar
+add .=içinde bulunduğun klasördeki bütü elemanları stageing area ya atar
+commit=staging area daki elemanları local rep e atar
+log=commitleri gösterir
+log --oneline=commitleri kısaltılmış halde gösterir
+checkout commit_id --. :bütün dosyalarla birlikte geçmişe dönme
+diff:dosyalarda yapılan değişiklikleri gösterir
+git checkout --dosya_adı=değiştirilen dosyayı geri yükler
+staging e gönderilen dosyayı değiştirmek: 
+                                 ↓
+git reset HEAD dosya_adı :bu komut sayesinde staging den çıkar
+	      ↓
+git checkout -- dosya_adı :dosya geri alınır
+              ↓
+git add . :dosya geri staging e gönderilir
+rm:dosya silmeye yarar
+mv:dosya isim değiştirmeye,dosya taşımaya ve dosya taşırken isim değiştirmeye yarar
+alias=komutları kısaltarak kullanmamıza yarar
+uzak sunucuya bağlanma: git remote add origin site_uzantısı
+push uzak sunucuya eleman gönderir
+pull uzak sunucudan eleman çeker
+gitignore=uzak sunucuda görünmemesini istediğimiz elemanlar için kullanılır
+branch kullanımı:
+git branch:hangi branch daysan onu yazar 
+git branch -all:kullanabileceğin bütün branch ları yazar
+git fecht=uzak sunucudaki branch ları kullanabilmemizi sağlar
+git branch branch_ismi=git de branch oluşturur 
+git checkout branch_ismi=yazılan branch a gider
+
+merge:başka branch daki elemanlar kendi bulunduğun branch a aktarır
+git fecht -p=? anlamadım 
+git branch -D branch_adı=yazılan branch ı siler 
+
+readme:proje hakkında bilgi verir indirilmesi gereken program varsa onları gösterir
