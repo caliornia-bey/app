@@ -1,0 +1,58 @@
+<!---->
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anasayfa | Paylaştıkça</title> <!--burası sayfanın başlığını tanımladığım yerdir-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"> <!--burası font awsome sitesi ile bağlantı kurduğum yerdir-->
+    <link rel="stylesheet" href="css/style.css"> <!-- bursaı sayfanın html kısmı ile css kısmı arasındaki bağlantıdır-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><!-- font için kütüphane ekledim-->
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet"><!-- font için kütüphane ekledim--> 
+</head>
+<body>
+    <section id="menu"> <!-- sayfanın menüsünde bulunan elemanları içine alır-->
+        <div id="logo">Paylaştıkça</div> <!-- sayfaya bir yazı ekledik ve diğerlerinden özel kılmak için id ekledik-->
+        <nav>
+            <a href=""><i class="fa-solid fa-house ikon"></i>Anasayfa</a> 
+            <a href=""><i class="fa-solid fa-info ikon"></i>Hakımızda</a>
+            <a href=""><i class="fa-solid fa-graduation-cap ikon"></i>Eğitimler</a>
+            <a href=""><i class="fa-solid fa-user-group ikon"></i>Ekip</a>
+            <a href=""><i class="fa-solid fa-comment-dots ikon"></i>İletişim</a>
+        </nav>
+    </section>
+
+    <section id="anasayfa">
+        <div id="black">
+          
+        </div>
+        <div id="icerik">
+            <h2>Paylaştıkça</h2>
+            <hr width=300 align=left> <!--hr sayfasa cizgi oluşturur width ile genişliğini ayarladım align ile nerde duracağını ayarladım-->
+            <p >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis quis minus facilis nisi tenetur error dolor architecto temporibus, aspernatur, ab id, similique quam eum? Repellat animi aspernatur dignissimos sequi illum!</p>
+        </div>
+    </section>
+
+    <section id="hakkimizda"><!-- burada hakkımızda diye genel bir section oluşturduk bunun amacı sayfadaki belirli bir bölümünü rahatca kontrol edebilmek için div ile arasında teknik olarak bir fark yoktur fakat section daha genel bir bölümü kapsar içinde div'leride barındırabilir-->
+            
+            <h3>hakkimizda</h3><!-- hakkimizde metinli bir başlık oluşturdum burada etikete id vermemememizin sebebi sayfada sedece 1 tene h3 kullanığımızdan dolayaı css kısmında h3 yazarak bu etikete müdahale edebiliriz -->
+
+            <div id="container"><!-- başlığın altındaki yazıları görseli vs daha rahat kontrol edebilmek ve sınıflandırmak için bunu ekledim-->
+
+                <div id="sol"><!--sayfadaki küçük bir bölümünün daha rahat kontrol edebilmek için bunu açtık sectionlar ve divler büyükten küçüğe doğru sıralanır -->
+                    <h5 id="h5sol">Lorem ipsum dolor sit amet consectetur adipisicing elit.dignissimos </h5> <!--daha demin dediğim bölümün metini-->
+                </div>
+
+                <div id="sag"><!--sayfadaki hakkımızda alanının sağındaki bölgeye rahat müdahale edebilmek için div oluşturduk-->
+                    <span>L</span><!--span teknik olarak div den bir farkı yoktur lakin genellikle büyük şeklerin içindeki küçük şey olarak kullanılırı mesela burdaki gibi büyük bir paragrafın 1 harfi için yapıyoruz-->
+                    <p id="psag">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non saepe repellendus, modi placeat itaque, blanditiis pariatur fugit tempore magni illum officia libero fugiat assumenda nemo suscipit explicabo consequuntur vel nulla.</p><!--sağ kısımdaki paragrafa müdahale etmek için psag id si verdik-->
+                </div>
+
+                <img src="img/about.jpg" alt="" class="img-fluid mt100"><!--img klasöründen about.jpg resmini sayfa ya ekledik VE BEKLEMEDE  -->
+
+                <p id="pson">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, dignissimos. Aperiam, odit deserunt. Aliquid, quas rerum? Enim, asperiores aliquid cum natus eius molestias blanditiis tempore, iure ipsum eveniet libero cumque?</p>
+            </div>
+    </section>
+</body>
+</html> 

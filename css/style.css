@@ -1,0 +1,155 @@
+/**/
+*{ /* buranın başına "*" koymamım amacı bütün etiketlere etki etmesi için     */
+      /* koyulan içeriklerin boyutunun değişmemesi için eklenir */
+}
+body{
+    font-family: "Nunito", sans-serif;/* nunito ismindeki fontu bütün sayfadaki ana font olarak tanımladım */
+    margin: 0; /* sayfadaki elemanların dış boşluğunu sıfırladık */
+}
+#menu
+{
+    height: 80px; /* menu elemanı section olduğu için zaten varsayılan olarak genişliği bütün sayfayı kapladığı için genişlik belirtmiyoruz*/
+    padding: 0  20px;/* soldan ve sağdan 20 px boşluk bıraktık*/
+}
+#logo
+{
+    font-size: 30px;/* logonun boyutunu ayarlar*/
+    line-height: 80px;/* aşşağıdan ve üstten 80 px boşluk bıraktım*/
+    color: #003666;/* logonun rengini verdim*/
+    float: left;/* logonun sol tarafa yapışmasını sağladım*/
+}
+nav 
+{
+    float: right;/* elemanları sağ tarfa taşıdım*/
+    line-height: 80px;/* BEKLEMEDE*/
+}
+nav a:link
+{
+    text-decoration: none; /* yazıların altındaki çizgileri kaldırdım*/
+    margin-right: 25px;/* yazılar arasında 25 px boşluk bıraktım*/
+    
+}
+nav a:hover
+{
+    border-bottom: 2px solid #003666; /* imleç üstüne geldiğinde 2 px büyüklüğünde ve verilen renkde bir çizgi koydum*/
+}
+nav a:visited
+{
+    text-decoration: none;/* yazıların altındaki çizgileri kaldırdım*/
+    margin-right: 25px;/* yazılar arasında 25 px boşluk bıraktım*/
+    color: #003666;
+}
+.ikon
+{
+    margin-right: 7px;/* yazılar arasında 7 px boşluk bıraktım*/
+    font-size: 16px; /* iconların büyüklüğünü 16 px yaptı*/
+}
+#anasayfa
+{
+    height: 700px; /*resimin yüksekliğini 800 px yaptım*/
+    background-image:
+     url("../img/r2.jpg");/* url kullanarak resim ekledim*/
+    background-size: cover;/*resmin genişliğini otomatik doldurdum */
+    background-position: center;/*resmi ortaladım*/
+    background-attachment: fixed;/* resmi ekranda sabitliyor ve sayfayı aşşağı kaydırsak bile resim sabit duruyor güzel bir görüntü oluyor*/
+}
+#black
+{
+    height: 700px; /*elemanın yüksekliğini 700 px yani resmin yüksekliği kadar yaptım*/
+    background-color: black;/*elemanın rengini siyah yaptım*/
+    opacity: 0.5;/*elemanın opaklığını yani saydamlığını 0.5 yaptım*/
+}
+#icerik /* SOR*/
+{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-size: 20px;
+}
+ #hakkimizda
+{
+    background-color: #f8f9fa; /* hakkimizda alanının arkaplanını belirlediğimiz renge getirdik*/
+    padding: 50px; /* hakkimizda alanının her köşesinden içeriye doğru 50 pixel götürdük*/
+    text-align: center;  /* hakkimizda alanının içindeki bütün yazıların yerlerini sayfanın merkezine taşıdık*/
+    text-transform: capitalize; /* hakkimizda alanının içindeki bütün kelimlerin baş harfini büyüttük*/
+    font-weight: 700;
+}
+h3
+{
+    font-size: 55px;/* h3 etiketindeki başlığın büyüklüğünü 55 px yaptık*/
+    color: #003666;/* başlığı kodunu yazdığımız renk yaptık*/
+    text-shadow: 2px 0px 3px black;/* başklığa gölge ekledik (yatay/dikey/dağılma yani her yöne) olarak yazılıyor */
+    font-weight: 600;
+}
+#container
+{
+    width: 1200px;/* içindekli bütün elemanların bütün elemanların genişliğni 1200px yapıyor*/
+    margin: auto;/* dış boşluıkları otomatik yapıyor yani benim anladığım ortalıyor*/
+    height: auto;/* içindeki bütün elemanların yüksekliğini otomatik ayarlıyor*/
+}
+#sol
+{
+    float: left;/* yazıyı sola taşıdım*/
+    border-right: 3px solid #445c6e ;/* yazının sağ tarafında yüksekliği yadar kesintisiz düz bir çizgi indirdim*/
+    font-size: 30px;/* yazı büyüklüğünü 30 px yaptım*/
+    width: 400px;/* elemanların genişliğini 400px yaptım*/
+    color: #445c6e;/* elmanların rengini girdiğimiz koddaki gibi yaptım*/
+}
+ #h5sol
+ {
+    line-height: 1.6 ; /* sitede yazılan text'ler için arkada bizim göremediğimiz bir kutu oluşturuluyor line height ise bu kutunun yüksekliğini ayarlıyor eğer yükseklik çok olursa satırlar arası boşluş çok oluyor az olursa satırlar arası boşluk az olduğu için yazılar iç içe giriyiyor*/
+    font-size: 25px;/* yazıların büyüklüklerini 25 pixel yapıyoruz*/
+    font-weight: 600;/* yazının kalınlığını 600 yaptım*/
+ }
+
+ #h5sol , #sag
+ {
+    margin: 0;/* yazının dış boşluklarını siler */
+    padding: 0;/* yazının iç boşluklarını siler */
+    margin-top: 20px;/* yazıyı üstten 20 px uzaklaştırdım*/
+ }
+
+ span /* html sayfasında sadece 1 tane span etiketi olduğu için başına "#" koymadım*/
+ {
+    font-size: 50px; /* yazı büyüklüğünü 50 px yaptım*/
+    margin-right: 7px;/* yazıyı sağ taraftan 7 px uzaklaştırdım*/
+    line-height: 42px;/* BEKLEMEDE */
+    color: #003666;/* yazının rengini girdiğimiz koddaki gibi yaptım*/
+    font-weight: 600;/* yazının kalınlığnı 600 yaptım*/
+    float: left;/* yazıyı sola  taşıdım*/
+ }
+/* */
+#sag
+{
+    float: right;/* bütün elemanları sağ tarafa aldım*/
+    width: 750px;/* sağ tarafın tümünün genişliğini 750px yaptım*/
+    color: #003666;/* yazının rengini girdiğimiz koddaki gibi yaptım*/
+    text-align: left;/* yazıyı sol tarafa taşıdım*/
+    letter-spacing: 1px;/* her harfin arasına 1 px boşluk koydum*/
+    font-size: 15px;/* yazı büyüklüğünü 15 px yaptım*/
+    line-height: 1.8;/* BEKLEMEDE*/
+    font-weight: 400;/* yazının kalınlığını 400 yaptım*/
+}
+
+.img-fluid
+{
+    max-width: 100%;/* resmin en fazla genişliği alanın dışından çıkamasın diye bunu yaptım*/
+    height: auto;/* yüksekliğini otomatik ayarlasın diye bunu yazdım*/
+}
+
+.mt100/* resim için iki tane class oluşturma sebebim bunlar varsayılan değerler gibi bişey sayfanın herhangi bir yerinde kullanmak istersem direkt .mt100 yapıp bu değerleri uyguluyabilirim*/
+{
+    margin-top: 100px;/* resmi yukarıdan 100 px uzaklaştırdım*/
+}
+
+#pson
+{
+    color: #003666;/* yazının rengini girdiğimiz koddaki gibi yaptım*/
+    letter-spacing: 1px;/* her harfin arasına 1 px boşluk koydum*/
+    font-size: 15px;/* yazı büyüklüğünü 15 px yaptım*/
+    line-height: 1.8;/* BEKLEMEDE*/
+    margin-top: 30px;/* yazıyı yukarıdan 30 px uzaklaştırdım*/
+    font-weight: 400;/* yazının kalınlığını 400 yaptım*/
+}
