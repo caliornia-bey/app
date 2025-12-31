@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giriş Ekranı</title>
+    <link rel="icon" href="resimler/favicon-16.png">
+    <style>
+        * {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            height: 100vh;
+            /* ⬅️ ŞART */
+            display: grid;
+            place-items: center;
+            /* tek satırda hem yatay hem dikey */
+
+        }
+
+
+        #ic {
+            background-color: rgba(255, 255, 255, 0.5);
+            width: 350px;
+            height: 320px;
+            border-radius: 25px;
+            padding: 25px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+            border-right: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .gor {
+            margin: 4%;
+            height: 30px;
+            width: 80%;
+            border-radius: 6px;
+            border: 2px solid purple;
+        }
+
+        #girBtn {
+            margin-top: 10%;
+            margin-left: 30%;
+            width: 40%;
+            height: 10%;
+            border-radius: 6px;
+            border: 2px solid purple;
+            background: linear-gradient(135deg, #9e6bd4, #9b59b6);
+            color: white;
+        }
+
+        .gor:focus {
+            outline: none;
+            border: 2px solid purple;
+            transition: .1s;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="dıs">
+        <div id="ic">
+            <input class="gor" id="email" placeholder="Email Adresinizi Giriniz">
+            <input class="gor" id="tc" type="text" placeholder="Tc Kimlik No">
+            <input class="gor" id="sifre" type="text" placeholder="Şifrenizi Girin">
+            <button id="girBtn">Giris Yap</button>
+        </div>
+    </div>
+</body>
+
+</html>

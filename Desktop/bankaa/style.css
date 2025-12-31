@@ -1,0 +1,533 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+#navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 10;
+}
+
+#as #logo {
+    position: absolute;
+    top: 30px;
+    left: 20%;
+    width: 200px;
+    height: 52px;
+}
+
+#menuButon {
+    position: absolute;
+    width: 82px;
+    height: 82px;
+    right: 10%;
+    top: 15px;
+    cursor: pointer;
+}
+
+#menuAlani {
+    position: absolute;
+    right: 20%;
+    top: 0;
+    background-color: black;
+}
+
+#acilirMenu {
+    position: absolute;
+    border: 2px solid bisque;
+    background: white;
+    top: 97px;
+    right: 0px;
+    display: none;
+    width: 200px;
+    padding: 10px;
+    z-index: 101;
+    border-radius: 8px;
+}
+
+.acBtn {
+    text-decoration: none;
+    color: black;
+}
+
+.acBtn:hover {
+    text-decoration: underline;
+}
+
+#menuAlani:hover #acilirMenu {
+    display: block;
+    opacity: 1;
+    position: fixed;
+    top: 10%;
+    right: 17%;
+}
+
+#ana-icerik {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 150px;
+    gap: 50px;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+#kur {
+    position: relative;
+    width: 400px;
+    height: 460px;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    border-radius: 25px;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    padding-top: 60px;
+    gap: 30px;
+}
+
+#kurBaslik {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+}
+
+.kart-dolar,
+.kart-euro,
+.kart-sterlin,
+.kart-ruble {
+    width: 150px;
+    height: 180px;
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#dolarBoy,
+#euroBoy,
+#sterlinBoy,
+#rubleBoy {
+    width: 60px;
+    height: 80px;
+}
+
+#dolar,
+#euro,
+#sterlin,
+#ruble {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    font-size: 100%;
+    padding: 5px;
+}
+
+#kredi {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 350px;
+    height: 460px;
+    border-radius: 25px;
+    padding: 25px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.kredi-baslik {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.input-satir {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input-satir label {
+    color: #333;
+    font-weight: 500;
+}
+
+.input-wrap {
+    display: flex;
+    align-items: center;
+}
+
+#krediTutar {
+    border: none;
+    text-align: right;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #002855;
+    width: 100px;
+}
+
+.birim {
+    font-weight: bold;
+    color: #002855;
+}
+
+.select-kutu select {
+    width: 100%;
+    border: none;
+    font-weight: bold;
+    color: #002855;
+    font-size: 1.1rem;
+    outline: none;
+    cursor: pointer;
+    background: transparent;
+}
+
+.ozet-bilgi {
+    margin-top: 20px;
+}
+
+.ozet-satir {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.cizgi {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 12px;
+}
+
+.etiket {
+    color: #666;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.deger {
+    color: #002855;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.buyuk .deger {
+    font-size: 1.2rem;
+}
+
+.basvur-btn {
+    width: 100%;
+    background-color: #7a003b;
+    color: white;
+    border: none;
+    padding: 3px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.basvur-yazi {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 5px;
+}
+
+@media (max-width: 900px) {
+    #ana-icerik {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        padding-bottom: 100px;
+    }
+
+    #kredi {
+        margin-right: 0;
+        width: 90%;
+        max-width: 400px;
+    }
+
+    #kur {
+        width: 90%;
+        max-width: 400px;
+    }
+
+    #as #logo {
+        left: 20%;
+        width: 150px;
+    }
+
+    #menuButon {
+        right: 20%;
+        width: 60px;
+        height: 60px;
+    }
+}
+
+#kartlar {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 800px;
+    height: 320px;
+    border-radius: 25px;
+    padding: 25px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    margin-left: 29%;
+    display: flex;
+    justify-items: center;
+}
+
+#klasikKart {
+    position: absolute;
+    width: 250px;
+    height: 163px;
+    margin-top: 8%;
+    left: 2%;
+    margin-right: 2%;
+}
+
+#customKart {
+    position: absolute;
+    width: 250px;
+    height: 163px;
+    margin-top: 8%;
+    left: 34%;
+    margin-right: 2%;
+}
+
+#amexKart {
+    position: absolute;
+    width: 250px;
+    height: 165px;
+    margin-top: 8%;
+    left: 66%;
+}
+
+.hov {
+    cursor: pointer;
+}
+
+#klasikyazi {
+    position: absolute;
+    top: 73%;
+}
+
+#customYazi {
+    position: absolute;
+    top: 73%;
+    left: 40%;
+}
+
+#amexYazi {
+    position: absolute;
+    top: 73%;
+    left: 74%;
+}
+
+.footer {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #444;
+    padding: 40px 60px;
+    background: #fff;
+}
+
+.iletisim {
+    text-align: right;
+    font-weight: 5000;
+}
+
+.orta {
+    margin-top: 30px;
+    color: #777;
+}
+
+.orta p {
+    margin: 6px 0;
+}
+
+.logos {
+    margin-top: 20px;
+}
+
+.logos img {
+    height: 28px;
+    margin-right: 15px;
+    vertical-align: middle;
+}
+
+.linkler {
+    margin-top: 30px;
+}
+
+.linkler a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #000;
+}
+
+.linkler a:hover {
+    text-decoration: underline;
+}
+
+.bot {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.liink {
+    margin-right: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.liink {
+    margin-right: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cashback-section {
+    width: 90%;
+    max-width: 1000px;
+    margin: 50px auto;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2d3436;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.cashback-kutu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 20px;
+    padding: 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 25px;
+    background-color: #fff;
+}
+
+.cashback-kart {
+    width: 100%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.marka-logo {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    margin-bottom: 15px;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.marka-adi {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #2d3436;
+    margin: 0 0 5px;
+}
+
+.cashback-rate {
+    color: #27ae60;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 5px 0;
+}
+@media (max-width: 900px) {
+    #ana-icerik {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        padding-bottom: 100px;
+    }
+
+    #kredi {
+        margin-right: 0;
+        width: 90%;
+        max-width: 400px;
+    }
+
+    #kur {
+        width: 90%;
+        max-width: 400px;
+    }
+
+    #as #logo {
+        left: 20%;
+        width: 150px;
+    }
+
+    #menuButon {
+        right: 20%;
+        width: 60px;
+        height: 60px;
+    }
+}
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .cashback-kutu {
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .cashback-rate {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-title {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width:900px) {
+    #kartlar{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

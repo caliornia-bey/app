@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakiye Sorgulama</title>
+    <link rel="icon" href="resimler/favicon-16.png">
+</head>
+
+<body>
+
+    <style>
+        * {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            height: 100vh;
+            /* ⬅️ ŞART */
+            display: grid;
+            place-items: center;
+            /* tek satırda hem yatay hem dikey */
+        }
+
+        section {
+            background-color: rgba(255, 255, 255, 0.5);
+            width: 400px;
+            height: 320px;
+            border-radius: 25px;
+            padding: 25px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+            border-right: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .gor {
+            position: absolute;
+            left: 5%;
+            margin: 4%;
+            height: 35px;
+            width: 80%;
+            border-radius: 6px;
+            border: 2px solid purple;
+        }
+
+        #btn {
+            margin-top: 22%;
+            margin-left: 24%;
+            width: 50%;
+            height: 15%;
+            border-radius: 6px;
+            border: 2px solid purple;
+            background: linear-gradient(135deg, #9e6bd4, #9b59b6);
+            color: white;
+            cursor: pointer;
+        }
+        #Bakiye{
+            position: absolute;
+            top: 50%;
+        }
+    </style>
+    <section>
+        <input class="gor" type="text" id="noYazi" placeholder="Banka Numaranızı giriniz">
+        <button id="btn">Sorgula</button>
+        <p id="Bakiye">Güncel Bakiyeniz:</p>
+    </section>
+</body>
+
+</html>

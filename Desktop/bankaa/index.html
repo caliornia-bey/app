@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="logo" href="Resimler/logo.png">
+    <title>SafePay</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="resimler/favicon-16.png">
+</head>
+
+<body>
+
+    <nav id="navbar">
+        <div id="as">
+            <a href="index.html"><img id="logo" src="resimler/logo.png" alt=""></a>
+        </div>
+        <div id="menuAlani">
+            <img src="resimler/kullanıcı.png" id="menuButon" alt="">
+            <div id="acilirMenu">
+                <a class="acBtn" href="girisEkran.html" id="gir">Giriş yap/ hesap aç</a>
+                <a class="acBtn" href="bakiyeSorgu.html">
+                    <p id="no">Banka no ile bakiye sorgulama</p>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div id="ana-icerik">
+
+        <section id="kur">
+            <h2 id="kurBaslik">GÜNCEL KURLAR :</h2>
+
+            <div class="kart-dolar">
+                <img id="dolarBoy" src="resimler/dolor.png" alt="">
+                <p id="dolar">34.50</p>
+            </div>
+
+            <div class="kart-euro">
+                <img id="euroBoy" src="resimler/euro.png" alt="">
+                <p id="euro">37.20</p>
+            </div>
+
+            <div class="kart-sterlin">
+                <img id="sterlinBoy" src="resimler/sterlin.png" alt="">
+                <p id="sterlin">42.10</p>
+            </div>
+
+            <div class="kart-ruble">
+                <img id="rubleBoy" src="resimler/ruble.png" alt="">
+                <p id="ruble">0.35</p>
+            </div>
+        </section>
+
+        <section id="kredi">
+            <h2 class="kredi-baslik">İhtiyaç Kredisi</h2>
+            <div class="input-grubu">
+                <div class="input-satir">
+                    <label>Tutar</label>
+                    <div class="input-wrap">
+                        <input id="krediTutar" value="60.000" type="text">
+                        <span class="birim">TL</span>
+                    </div>
+                </div>
+                <div class="input-satir select-kutu">
+                    <select id="aylar">
+                        <option value="3">3 Ay</option>
+                        <option value="6">6 Ay</option>
+                        <option value="9">9 Ay</option>
+                        <option value="12">12 Ay</option>
+                        <option value="15">15 Ay</option>
+                        <option value="18">18 Ay</option>
+                        <option value="24">24 Ay</option>
+                        <option value="36">36 Ay</option>
+                        <option value="48">48 Ay</option>
+                    </select>
+                </div>
+            </div>
+            <div class="ozet-bilgi">
+                <div class="ozet-satir">
+                    <span class="etiket">Taksit Tutarı</span>
+                    <span id="taksitTutar" class="deger">20.000 TL</span>
+                </div>
+                <div class="ozet-satir cizgi">
+                    <span class="etiket">Aylık Faiz Oranı*</span>
+                    <span id="faizOran" class="deger">%0</span>
+                </div>
+                <div class="ozet-satir buyuk">
+                    <span class="etiket">Toplam Geri<br>Ödeme Tutarı</span>
+                    <span id="toplamTutar" class="deger">60.000 TL</span>
+                </div>
+            </div>
+            <button onclick="faiz()" class="basvur-btn">
+                <p class="basvur-yazi">Hemen Hesapla →</p><i class="fa-solid fa-chevron-right"></i>
+            </button>
+        </section>
+    </div>
+
+    <section id="kartlar">
+        <h2>Kartlar</h2>
+
+        <div id="son">
+            <div>
+                <a href="custom.html"><img class="hov" id="customKart" src="resimler/custom.png" alt=""></a>
+                <h4 id="customYazi">Özelleştirilebilir Kart</h4>
+            </div>
+            <div>
+                <a href="siparis.html"><img class="hov" id="klasikKart" src="resimler/klasik kart.png" alt=""></a>
+                <h4 id="klasikyazi">Klasik Kart</h4>
+            </div>
+            <div>
+                <a href="siparis.html"><img class="hov" id="amexKart" src="resimler/amex.png" alt=""></a>
+                <h4 id="amexYazi">American Express</h4>
+            </div>
+            
+        </div>
+    </section>
+
+    <div class="cashback-section">
+        <h2 class="section-title">Cashback</h2>
+    
+    <div class="cashback-kutu">
+        <div class="cashback-kart">
+            <img src="resim" alt="YouTube Logo" class="marka-logo">
+            <h3 class="marka-adi">YouTube Premium</h3>
+            <div class="cashback-deger">%30</div>
+        </div>
+
+        <div class="cashback-kart">
+            <img src="resim" alt="Amazon Prime Logo" class="marka-logo">
+            <h3 class="marka-adi">Amazon Prime</h3>
+            <div class="cashback-deger">%50</div>
+        </div>
+
+        <div class="cashback-kart">
+            <img src="resim" alt="Netflix Logo" class="marka-logo">
+            <h3 class="marka-adi">Netflix</h3>
+            <div class="cashback-deger">%25</div>
+        </div>
+
+         <div class="cashback-kart">
+            <img src="resim" alt="Uber Logo" class="marka-logo">
+            <h3 class="marka-adi">Uber</h3>
+            <div class="cashback-deger">%15</div>
+        </div>
+    </div>
+</div>
+
+    <footer class="footer">
+
+        <div class="iletisim">
+            <p>destek@safepay.com</p>
+            <p>0850 340 0 340</p>
+        </div>
+        </div>
+
+        <div class="orta">
+            <p>
+                SafePay, Bankalararası Kart Merkezi, Mastercard ve Visa üye kuruluşudur.
+            </p>
+            <p>
+                SafePay, 6493 sayılı yasa kapsamında kurulmuş bir elektronik para ve ödeme
+                hizmetleri kuruluşudur.
+            </p>
+            <p>
+                SafePay, 5549 sayılı yasa kapsamında Mali Suçları Araştırma Kurulu yükümlü
+                kuruluşları arasındadır.
+            </p>
+        </div>
+
+        <div class="linkler">
+            <a href="#">Hakkımızda</a>
+            <a href="#">Blog</a>
+            <a href="#">Kariyer</a>
+            <a href="#">Gençlik Departmanı</a>
+            <a href="#">SSS</a>
+            <a href="#">Aydınlatma Metni</a>
+            <a href="#">Çerçeve Sözleşme</a>
+            <a href="#">Güvenlik Bildirgesi</a>
+        </div>
+
+        <div class="bot">
+            <div class="liink">
+                <span>X</span>
+                <span>Facebook</span>
+                <span>instagram</span>
+            </div>
+
+            <p>SafePay Elektronik Para A.Ş.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
